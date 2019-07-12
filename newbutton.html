@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>COUNTER</title>
+<script type="text/javascript" src="newbtn.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<style>
+body {
+  padding: 20px;
+}
+#container {
+  height: 100%; 
+  width: 100%; 
+  overflow: auto;
+}
+div {
+  display: inline-block;
+  height:230px;
+  width:100px;
+  margin: 20px;
+  border: gray;
+  border-style:solid;
+}
+button {
+  float: inline;
+  border: black;
+  color: #36CC9B;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  width: 80px;
+  height: 50px;
+  border-radius:21px;
+  cursor: pointer;
+  background: beige;
+}
+.buttonUp {
+  position: relative;
+  top:50px;
+  left:30%;
+}
+.buttonDown {
+  position:relative;
+  left:30%;
+}
+p {
+  display: block;
+  position: relative;
+  left:30%;
+  top:10px;
+  padding: 13px;
+  padding-top: 0px;
+  font-weight: bold;
+  z-index: 10;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.buttonSet {
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.myRectangle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  border-style: solid;
+  font-weight:900;
+  color: red;
+}
+.resetB {
+  display:block;
+  position: relative;
+  width:100%;
+  top:0px;
+
+  background: beige;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+</style>
+</head>
+
+<body>
+<button type="button" style="margin:30px" onclick="addCounter()">Add Counter</button>
+<button type="button" style="margin:30px" onclick="removeCounter()">Remove Counter</button>
+<button type="button" style="margin:30px" onclick="allReset()">Reset All Counters</button>
+<div id="container" style="border-style: hidden">
+</div>
+</body>
+
+</html>
